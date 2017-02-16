@@ -1,0 +1,65 @@
+@import common
+
+#nav-text
+    position: absolute
+    top: 17px
+    right: 22px
+
+.online-now
+    color: white
+    font-weight: bold
+
+#BannerWrap
+    height: 300px
+    width: 100%    
+    #Banner
+        height: 100%
+        width: 100%
+        position: relative
+        background: -webkit-linear-gradient(left top, #009900, #5ABD5A); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(left top, #009900, #5ABD5A); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(left top, #009900, #5ABD5A); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to left top, #009900, #5ABD5A); /* Standard syntax */
+        #Welcome
+            height: 100%
+            width: 100%
+            h1
+                font-size: 4em
+                position: relative
+                top: 50%
+                transform: translateY(-50%)
+                text-align: center
+                color: white             
+        #LoginButtonGroup
+            position: absolute
+            top: 20px
+            right: 20px
+            
+#Login
+    margin-top: 350px
+    max-width: 320px
+    margin-left: auto
+    margin-right: auto
+    padding: 10px 16px 10px 6px
+    border-radius: 10px
+    background-color: white
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+    &:hover
+      animation: pulse 2s infinite
+
+.pulsate
+  -webkit-animation: pulsate 3s ease-out
+  -webkit-animation-iteration-count: infinite
+  opacity: 0.7
+
+@-webkit-keyframes pulsate
+  0%
+    opacity: 0.7
+
+  50%
+    opacity: 1.0
+
+  100%
+    opacity: 0.7
