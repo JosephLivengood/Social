@@ -3,6 +3,7 @@ import {render} from 'react-dom';
 
 import Banner from './components/Banner/index.jsx';
 import Login from './components/Login/index.jsx';
+import Features from './components/Features/index.jsx';
 import Nav from './components/Nav/index.jsx';
 
 class Home extends React.Component {
@@ -17,6 +18,7 @@ class Home extends React.Component {
             <div id='Home'>
                 <Nav />
                 <Banner />
+                <Features />
                 <Login authStrats={authStrats}/>
             </div>
         );
