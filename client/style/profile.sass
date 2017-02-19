@@ -1,0 +1,99 @@
+@import common
+    
+#BannerWrap
+    height: 100px
+    width: 100%
+    #Banner
+        height: 100%
+        width: 100%
+        position: relative
+        background: -webkit-linear-gradient(left top, #006300, #5ABD5A); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(left top, #006300, #5ABD5A); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(left top, #006300, #5ABD5A); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to left top, #006300, #5ABD5A); /* Standard syntax */
+        #Welcome
+            height: 100%
+            width: 100%
+            h1
+                font-size: 3em
+                position: relative
+                top: 50%
+                transform: translateY(-50%)
+                text-align: center
+                color: white
+        #settings-link
+            color: white
+            position: absolute
+            bottom: 10px
+            right: 20px
+            &:hover
+                color: white
+        #home-link
+            color: white
+            position: absolute
+            bottom: 10px
+            left: 20px
+            &:hover
+                color: white
+            
+#Me
+    border-radius: 30px 30px 0 0
+    height: 130px
+    width: 90%
+    margin-left: 5%
+    margin-top: -125px
+    padding: 3px
+    position: fixed
+    bottom: 0px
+    background-color: #f9f9f9
+    p
+        text-align: center
+    img
+        display: block
+        margin: auto
+        height: 100px
+        opacity: 0.9
+    #logout
+        font-size: 10px
+        opacity: 0.5
+        &:hover
+            opacity: 1.0
+    form
+        position: relative
+        top: 50%
+        transform: translateY(-50%)
+        width: 100%
+        #updatestatus
+            width: 80%
+        #submitstatus
+            margin-left: 2%
+            width: 18%
+    .sample-text
+        text-align: center
+    .sample-chart
+        position: relative
+        top: 30%
+        left: 50%
+        transform: translateY(-50%) translateX(-50%)
+        width: 90px
+        height: 90px
+        border-radius: 50%
+        background-color: #5ABD5A
+
+#Profile
+    margin-bottom: 140px
+
+.pulsate
+  -webkit-animation: pulsate 3s ease-out
+  -webkit-animation-iteration-count: infinite
+  opacity: 0.7
+
+@-webkit-keyframes pulsate
+  0%
+    opacity: 0.7
+
+  50%
+    opacity: 1.0
+
+  100%
+    opacity: 0.7

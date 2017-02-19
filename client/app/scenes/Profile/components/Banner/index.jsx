@@ -9,7 +9,7 @@ export default class Banner extends React.Component {
         this.nextKnowledgeIs = this.nextKnowledgeIs.bind(this);
     }
     componentDidMount() {
-        this.countdown = setInterval(this.nextKnowledgeIs, 3000);
+        this.countdown = setInterval(this.nextKnowledgeIs, 9000);
     }
     nextKnowledgeIs() {
         const is = ['Power','Freedom','Inspiration','Free','Everywhere','Everything','Strength','Peace'];
@@ -20,11 +20,8 @@ export default class Banner extends React.Component {
         return (
             <div id='BannerWrap'>
                 <div id='Banner'>
-                    <div className="btn-group" id="LoginButtonGroup">
-                        <button className='btn btn-outline-secondary' disabled>Email Login</button>
-                        <button className='btn btn-outline-secondary'><i className="fa fa-github fa-lg"></i></button>
-                        <button className='btn btn-outline-secondary' disabled><i className="fa fa-google fa-lg"></i></button>
-                    </div>
+                    <a id='settings-link' href='/profile/settings'>Settings</a>
+                    <a id='home-link' href='/'>Home</a>
                     <div id='Welcome'>
                         <h1>Knowledge is <em className='pulsate'>{this.state.knowledge}</em>.</h1>
                     </div>

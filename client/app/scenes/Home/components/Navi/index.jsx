@@ -3,7 +3,7 @@ import {render} from 'react-dom';
 import ReactTooltip from 'react-tooltip'
 import { Container, Row, Col } from 'reactstrap';
 
-export default class Banner extends React.Component {
+export default class Navi extends React.Component {
     constructor(props) {
         super(props);
         //SAMPLE STATE, will load data from server in production
@@ -12,11 +12,15 @@ export default class Banner extends React.Component {
                       links: [
                                {name: 'Top trending', links: [{name: 'What is Node.js for?', url: '/a/coding/what-is-nodejs-for'},
                                                               {name: 'How to land that dream job', url: '/a/jobs/how-to-land-that-dream-job51'}]},
-                               {name: 'Categories', links: [{name: 'Javascript', url: '/c/javascript'},
+                               {name: 'Categories', links: [{name: 'Programming', url: '/c/javascript'},
+                                                            {name: 'The Arts', url: '/c/javascript'},
+                                                            {name: 'Beauty', url: '/c/javascript'},
+                                                            {name: 'Photography', url: '/c/javascript'},
                                                             {name: 'Cooking', url: '/c/cooking'}]},
-                               {name: '[other]', links: [{name: 'Other', url: '/#'}]},
+                               {name: ' ', links: [{name: ' ', url: '/#'}]},
                                {name: 'About us', links: [{name: 'Privacy Policy', url: '/about/privacy-policy'},
-                                                         {name: 'Careers', url: '/about/careers'}]},
+                                                          {name: 'Our Mission', url: '/about/mission'},
+                                                          {name: 'Careers', url: '/about/careers'}]},
                              ]
                      };
     }

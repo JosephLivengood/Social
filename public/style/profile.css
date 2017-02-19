@@ -101,34 +101,8 @@ html, body {
   100% {
     background-color: #ebebeb; } }
 
-#nav-text {
-  position: absolute;
-  top: 17px;
-  right: 22px; }
-
-.online-now {
-  color: white;
-  font-weight: bold; }
-
-.trending-link {
-  display: block;
-  color: #4b5257; }
-  .trending-link:hover {
-    color: white;
-    font-weight: bold; }
-
-#Features {
-  margin: 5px; }
-
-.nav-tabs {
-  background-color: #006300;
-  color: white;
-  font-size: 1.2em; }
-  .nav-tabs li:hover {
-    color: black; }
-
 #BannerWrap {
-  height: 350px;
+  height: 100px;
   width: 100%; }
   #BannerWrap #Banner {
     height: 100%;
@@ -146,31 +120,73 @@ html, body {
       height: 100%;
       width: 100%; }
       #BannerWrap #Banner #Welcome h1 {
-        font-size: 4em;
+        font-size: 3em;
         position: relative;
         top: 50%;
         transform: translateY(-50%);
         text-align: center;
         color: white; }
-    #BannerWrap #Banner #LoginButtonGroup {
+    #BannerWrap #Banner #settings-link {
+      color: white;
       position: absolute;
-      top: 20px;
+      bottom: 10px;
       right: 20px; }
+      #BannerWrap #Banner #settings-link:hover {
+        color: white; }
+    #BannerWrap #Banner #home-link {
+      color: white;
+      position: absolute;
+      bottom: 10px;
+      left: 20px; }
+      #BannerWrap #Banner #home-link:hover {
+        color: white; }
 
-#Login {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  max-width: 320px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px 16px 10px 6px;
-  border-radius: 10px;
-  background-color: white;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
-  #Login:hover {
-    animation: pulse 2s infinite; }
+#Me {
+  border-radius: 30px 30px 0 0;
+  height: 130px;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: -125px;
+  padding: 3px;
+  position: fixed;
+  bottom: 0px;
+  background-color: #f9f9f9; }
+  #Me p {
+    text-align: center; }
+  #Me img {
+    display: block;
+    margin: auto;
+    height: 100px;
+    opacity: 0.9; }
+  #Me #logout {
+    font-size: 10px;
+    opacity: 0.5; }
+    #Me #logout:hover {
+      opacity: 1.0; }
+  #Me form {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%; }
+    #Me form #updatestatus {
+      width: 80%; }
+    #Me form #submitstatus {
+      margin-left: 2%;
+      width: 18%; }
+  #Me .sample-text {
+    text-align: center; }
+  #Me .sample-chart {
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #5ABD5A; }
+
+#Profile {
+  margin-bottom: 140px; }
 
 .pulsate {
   -webkit-animation: pulsate 3s ease-out;

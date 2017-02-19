@@ -1,11 +1,9 @@
 import React from 'react';
 import {render} from 'react-dom';
+import { Container, Row, Col } from 'reactstrap';
 
-import ClickScore from './components/ClickScore/index.jsx';
-import TopClickScorers from './components/TopClickScorers/index.jsx'
-import Account from './components/Account/index.jsx'
-import ProfileSideBar from './components/ProfileSideBar/index.jsx';
-
+import Banner from './components/Banner/index.jsx';
+import Me from './components/Me/index.jsx';
 
 class Profile extends React.Component {
     componentDidMount () {
@@ -13,19 +11,11 @@ class Profile extends React.Component {
     }
     render () {
         return (
-            <div id='Profile' className='container'>
-                <div className='row'>
-                    <div className='col-sm-2'>
-                        <ProfileSideBar />
-                    </div>
-                    <div className='col-sm-7'>
-                        <ClickScore />
-                        <Account />
-                    </div>
-                    <div className='col-sm-3'>
-                        <TopClickScorers />
-                    </div>
-                </div>
+            <div id='Profile'>
+                <Banner />
+                <div style={{height: '2000px'}}></div>
+                <p>hi</p>
+                <Me />
             </div>
         );
     }
