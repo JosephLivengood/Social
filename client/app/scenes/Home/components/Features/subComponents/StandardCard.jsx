@@ -53,6 +53,20 @@ export class StandardCardImg extends React.Component {
         var i = Math.random()*900;
         var sampletext = placeholder.slice(i,i+Math.floor(Math.random()*600)+100);
         return (
+            <Card className='sample-img-card'>
+                <CardBlock>
+                    <CardTitle>How to React.js with Bootstrap v4</CardTitle>
+                    <CardSubtitle>Joseph Livengood</CardSubtitle>
+                    <CardText>{sampletext}</CardText>
+                    <Button>Read More</Button>
+                    <CardText>
+                        <small className="text-muted">Last updated 7 mins ago</small>
+                    </CardText>
+                </CardBlock>
+            </Card>
+        );
+        
+        /*(
             <Card>
                 <CardImg className="standard-card-img" top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=placeholder&w=256&h=160" />
                 <CardImgOverlay>
@@ -65,6 +79,6 @@ export class StandardCardImg extends React.Component {
                     </CardText>
                 </CardImgOverlay>
             </Card>
-        );
+        );*/
     }
 }
