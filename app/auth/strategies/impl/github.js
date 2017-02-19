@@ -13,7 +13,7 @@ module.exports = (app, db) => {
     passport.use(new GithubStrategy({
             clientID: process.env.GITHUB_ID,
             clientSecret: process.env.GITHUB_SECRET,
-            callbackURL: config.app_url + "/auth/github/callback"
+            callbackURL: (process.env.APP_URL || config.app_url) + "/auth/github/callback"
         },
         function(accessToken, refreshToken, profile, done) {
             return userModel.userLoggedIn(profile, done);
