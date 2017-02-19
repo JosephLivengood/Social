@@ -4,7 +4,7 @@
   "description": "Node/Express, ReactJS, Authentication boilerplate for use in future projects for anyone wanting to jump right into making content!",
   "main": "server.js",
   "scripts": {
-    "start": "webpack -p && node server.js",
+    "start": "webpack --progress && node server.js",
     "test": "mocha test/ test/**",
     "build": "webpack && node-sass client/style -o public/style",
     "build-react-prod": "webpack -p",
