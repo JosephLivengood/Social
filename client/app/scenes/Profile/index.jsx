@@ -4,6 +4,7 @@ import { Container, Row, Col } from 'reactstrap';
 
 import Banner from './components/Banner/index.jsx';
 import Me from './components/Me/index.jsx';
+import SocialWrap from './components/SocialWrap/index.jsx'
 
 class Profile extends React.Component {
     componentDidMount () {
@@ -13,8 +14,7 @@ class Profile extends React.Component {
         return (
             <div id='Profile'>
                 <Banner />
-                <div style={{height: '2000px'}}></div>
-                <p>hi</p>
+                <SocialWrap />
                 <Me />
             </div>
         );

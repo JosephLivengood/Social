@@ -103,19 +103,18 @@ html, body {
 
 #BannerWrap {
   height: 100px;
-  width: 100%; }
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 9999; }
   #BannerWrap #Banner {
     height: 100%;
     width: 100%;
     position: relative;
     background: -webkit-linear-gradient(left top, #006300, #5ABD5A);
-    /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(left top, #006300, #5ABD5A);
-    /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(left top, #006300, #5ABD5A);
-    /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to left top, #006300, #5ABD5A);
-    /* Standard syntax */ }
+    background: linear-gradient(to left top, #006300, #5ABD5A); }
     #BannerWrap #Banner #Welcome {
       height: 100%;
       width: 100%; }
@@ -143,6 +142,9 @@ html, body {
 
 #Me {
   border-radius: 30px 30px 0 0;
+  -webkit-box-shadow: 10px 4px 15px rgba(0, 0, 0, 0.4), -10px 4px 15px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 10px 4px 15px rgba(0, 0, 0, 0.4), -10px 4px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: 10px 4px 15px rgba(0, 0, 0, 0.4), -10px 4px 15px rgba(0, 0, 0, 0.4);
   height: 130px;
   width: 90%;
   margin-left: 5%;
@@ -185,7 +187,43 @@ html, body {
     border-radius: 50%;
     background-color: #5ABD5A; }
 
+#SocialWrap {
+  width: 100%; }
+
+#ArticleFeed {
+  margin: 10px;
+  text-align: center; }
+  #ArticleFeed .card {
+    margin-bottom: 30px; }
+  #ArticleFeed .article-card {
+    background-color: #FBFBFB; }
+
+#StatusFeed .status-update {
+  margin: 10px;
+  border-left: 6px solid #5ABD5A;
+  background-color: #FBFBFB;
+  text-align: center; }
+  #StatusFeed .status-update .status-update-cons {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
+  #StatusFeed .status-update img {
+    display: block;
+    margin: auto;
+    height: 65px;
+    opacity: 0.9; }
+  #StatusFeed .status-update .name {
+    font-size: 10px; }
+  #StatusFeed .status-update .status-text, #StatusFeed .status-update .status-time {
+    text-align: left; }
+  #StatusFeed .status-update .reply-count {
+    margin-bottom: 0px; }
+  #StatusFeed .status-update .reply-label {
+    margin-top: 0px;
+    font-size: 9px; }
+
 #Profile {
+  margin-top: 100px;
   margin-bottom: 140px; }
 
 .pulsate {
