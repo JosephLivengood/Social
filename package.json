@@ -11,7 +11,9 @@
     "build-react": "webpack",
     "watch-react": "webpack --progress --colors --watch",
     "build-css": "node-sass client/style -o public/style",
-    "watch-css": "node-sass -w client/style -o public/style"
+    "watch-css": "node-sass -w client/style -o public/style",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -50,6 +52,8 @@
     "react-dom": "^15.4.2",
     "react-tooltip": "^3.2.2",
     "reactstrap": "^4.2.0",
-    "webpack": "^1.14.0"
-  }
+    "webpack": "^1.14.0",
+    "snyk": "^1.30.1"
+  },
+  "snyk": true
 }
