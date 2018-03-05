@@ -50,6 +50,6 @@
     "react-dom": "^15.4.2",
     "react-tooltip": "^3.2.2",
     "reactstrap": "^4.2.0",
-    "webpack": "^1.14.0"
+    "webpack": "^2.2.0"
   }
 }
