@@ -32,7 +32,7 @@
     "body-parser": "^1.16.0",
     "bootstrap": "^4.0.0-alpha.6",
     "chai": "^3.5.0",
-    "chai-http": "^3.0.0",
+    "chai-http": "^4.0.0",
     "dotenv": "^4.0.0",
     "express": "^4.14.0",
     "express-session": "^1.14.2",
@@ -47,7 +47,7 @@
     "react": "^15.4.2",
     "react-addons-css-transition-group": "^15.4.2",
     "react-addons-transition-group": "^15.4.2",
-    "react-dom": "^15.4.2",
+    "react-dom": "^16.0.1",
     "react-tooltip": "^3.2.2",
     "reactstrap": "^4.2.0",
     "webpack": "^1.14.0"
